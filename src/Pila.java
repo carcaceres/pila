@@ -29,7 +29,7 @@ public class Pila {
         if (tam >= 0) {
             pila[tam] = n;
             tam--;
-
+            System.out.println("tam agreg" + tam);
         } else {
             System.out.println("desborde de pila");
         }
@@ -41,17 +41,24 @@ public class Pila {
             if (tam == -1) {
                 tam = 0;
             }
-          
-            if (tam < (maxPila-2)) {
-             tam = tam + 1;
-            pila[tam] = null;
+            else if(tam<=(maxPila-2)){
                 tam++;
             }
-            else if(tam==maxPila-1){
-                pila[tam] = null;
-                tam=maxPila-1;
+            else if(tam==(maxPila-1)){
+               tam=maxPila-1;
             }
-            System.out.println("tam " + tam);
+            
+             System.out.println("tam quit" + tam);
+            if(tam<(maxPila - 1)) {
+
+                pila[tam] = null;
+               
+            }
+            else if(tam==(maxPila-1)){
+                pila[maxPila-1]=null;
+            }
+            
+            System.out.println("tam quit" + tam);
 
         }
 

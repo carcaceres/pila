@@ -231,6 +231,7 @@ public class PilaGui extends javax.swing.JFrame {
                   "Se vacio la pila");
           elemText.setText("");
         elemText.requestFocus();
+        mostrarPila();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     
